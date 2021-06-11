@@ -16,7 +16,7 @@ int main() {
 	// In case of multiple days, consider the given sequence as a cyclic sequence. 
 	// Concatenate the sequence twice and solve the previous case. 
 	// Sure, it is not necessary to concatenate it in explicit way, 
-	// just use a[i % n] instead of a[n] and process i = 0 ... 2 * n - 1.
+	// just use a[i % n] instead of a[i] and process i = 0 ... 2 * n - 1.
 	for (int i = 0; i < 2 * n; i++) {
 		if (a[i % n] == 1) {
 			len++;
